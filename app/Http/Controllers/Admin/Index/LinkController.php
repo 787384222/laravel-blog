@@ -34,7 +34,7 @@ class LinkController extends Controller
         $this->validate($request, [
             'title' => 'required|max:150',
             'description' => 'required|max:150',
-            'url' => 'required|max:50',
+            'url' => 'required|max:150',
             'follow' => 'required',
         ]);
 
@@ -64,7 +64,7 @@ class LinkController extends Controller
         $this->validate($request, [
             'title' => 'required|max:150',
             'description' => 'required|max:150',
-            'url' => 'required|max:50',
+            'url' => 'required|max:150',
             'follow' => 'required',
         ]);
 
