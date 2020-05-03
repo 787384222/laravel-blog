@@ -49,8 +49,8 @@ class InfoController extends Controller
 
         $navigation = [];
         for ($i = 0; $i < 9; $i++) {
-            $title = $input['navigation-title-'.strval($i)];
-            $url = $input['navigation-url-'.strval($i)];
+            $title = isset($input['navigation-title-'.strval($i)]) ? $input['navigation-title-'.strval($i)] : '';
+            $url = isset($input['navigation-url-'.strval($i)]) ? $input['navigation-url-'.strval($i)] : '';
             if ($title && $url) $navigation[] = ["title" => $title, "url" => $url];
         }
 
